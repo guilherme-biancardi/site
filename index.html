@@ -1,12 +1,124 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-br">
+
 <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>Page Title</title>
+    <title>Index</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="stylesheet" href="https://kit-free.fontawesome.com/releases/latest/css/free-v4-shims.min.css">
+    <link rel="stylesheet" href="https://kit-free.fontawesome.com/releases/latest/css/free-v4-font-face.min.css">
+    <link rel="stylesheet" href="https://kit-free.fontawesome.com/releases/latest/css/free.min.css">
+
+    <link rel="shortcut icon" href="img/logo-mobile.png" type="image/x-icon">
+    <link rel='stylesheet' type='text/css' media='screen' href='css/main.css'>
+    <script src="js/jquery.js"></script>
+    <script src="js/menu.js" defer></script>
+    <script src="js/dark.js" defer></script>
 </head>
-<body>
-    fhiufhiufhuifh
+
+<body onload="main()">
+    <div class="header">
+        <button class="btn-menu"><i class="fa fa-bars"></i></button>
+        <a href="index.html" class="logo"></a>
+        <div class="bar">
+            <nav class="menu">
+                <a href="index.html">
+                    <div class="link is">Home<i class="fas fa-home"></i></div>
+                </a>
+                <a href="tutoriais.html">
+                    <div class="link">Office<i class="fab fa-microsoft"></i></div>
+                </a>
+                <a href="eventos.html">
+                    <div class="link">Xbox<i class="fab fa-xbox"></i></div>
+                </a>
+                <a href="downloads.html">
+                    <div class="link">Windows<i class="fab fa-windows"></i></div>
+                </a>
+                <a href="contato.html">
+                    <div class="link">Suporte<i class="fas fa-headset"></i></div>
+                </a>
+                <a>
+                    <div class="link btn-hide">Ocultar menu<i class="fas fa-angle-left"></i></div>
+                </a>
+                <a>
+                    <div class="link btn-dark"><i class="fas fa-moon"></i></div>
+                </a>
+            </nav>
+        </div>
+    </div>
+    <div class="content">
+        <div class="banner"></div>
+        <div class="products">
+            <a href="index.html">
+                <div class="basic-product"><i class="fab fa-edge"></i><span>Conheça o Microsft Edge</span></div>
+            </a>
+            <a href="index.html">
+                <div class="basic-product"><i class="fab fa-xbox"></i><span>Comprar o Xbox</span></div>
+            </a>
+            <a href="index.html">
+                <div class="basic-product"><i class="fab fa-windows"></i><span>Comprar o Windows 10</span></div>
+            </a>
+        </div>
+        <div class="main">
+            <article class="service">
+                <a href="#"><img src="img/office.png" alt="Office 365"></a>
+                <div class="inner">
+                    <a href="#">Este é o seu 365</a>
+                    <p>
+                        Descubra uma nova possibilidade a cada dia com o Office 365.
+                    </p>
+                    <div class="spans">
+                        <span class="sp-link">para até seis pessoas</span><span class="none"><i
+                                class="fas fa-chevron-right"></i></span><br><br>
+                        <span class="sp-link">para uma pessoa</span><span class="none"><i
+                                class="fas fa-chevron-right"></i></span>
+                    </div>
+                </div>
+            </article>
+            <article class="service">
+                <a href="#"><img src="img/xbox.png" alt="Xbox One X"></a>
+                <div class="inner">
+                    <a href="#">Xbox One X</a>
+                    <p>
+                        O console mais poderoso do mundo.
+                    </p>
+                    <div class="spans">
+                        <span class="sp-link">compre agora</span><span class="none"><i
+                                class="fas fa-chevron-right"></i></span><br>
+                    </div>
+                </div>
+            </article>
+            <article class="service">
+                <a href="#"><img src="img/game-pass.png" alt="Xbox game-pass"></a>
+                <div class="inner">
+                    <a href="#">Xbox Game Pass Ultimate</a>
+                    <p>
+                        Xbox Live Gold e mais de 100 jogos para console e PC de alta qualidade. Jogue com amigos e descubra
+                        seu próximo jogo favorito.
+                    </p>
+                    <div class="spans">
+                        <span class="sp-link">assine agora</span><span class="none"><i
+                                class="fas fa-chevron-right"></i></span><br>
+                    </div>
+                </div>
+            </article>
+            <article class="service">
+                <a href="#"><img src="img/jogo.png" alt="Jogo Bolado"></a>
+                <div class="inner">
+                    <a href="#">Ori and the Will of the Wisps</a>
+                    <p>
+                        Chegou a esperada sequência de Ori and the Blind Forest! Uma nova aventura em um mundo vasto e
+                        exótico para revelar o verdadeiro destino de Ori.
+                    </p>
+                    <div class="spans">
+                        <span class="sp-link">comprar agora</span><span class="none"><i
+                                class="fas fa-chevron-right"></i></span><br>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </div>
 </body>
+
 </html>
