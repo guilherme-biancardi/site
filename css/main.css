@@ -1,1 +1,420 @@
+* {
+    margin: 0;
+    padding: 0;
+}
 
+body {
+    background-color: #1b1b1b;
+    transition: all .2s linear;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+::-webkit-scrollbar {
+    width: 3px;
+}
+
+::-webkit-scrollbar-track {
+    background: #1b1b1b;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+/*Cabeçalho*/
+.header {
+    width: 100%;
+    height: 100px;
+    box-sizing: border-box;
+    height: 70px;
+    background-color: #141414;
+}
+
+.logo{
+    width: 48px;
+    height: 48px;
+    background: url(../img/logo-mobile.png) no-repeat;
+    background-position: center center;
+    background-size: 48px;
+    padding: 10px;
+    float: right;
+}
+
+/*Menu*/
+.btn-menu {
+    position: fixed;
+    width: 56px;
+    height: 56px;
+    font-size: 2.2em;
+    cursor: pointer;
+    padding: 15px;
+    z-index: 1;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    color: #ededed;
+}
+
+.bar {
+    position: fixed;
+    height: 100vh;
+    background-color: #222;
+    transition: all .3s linear;
+    box-shadow: 1px 0px 5px rgba(0, 0, 0, 0.5);
+}
+
+.menu {
+    width: 100%;
+    position: absolute;
+    top: 60px;
+}
+
+.menu a {
+    text-decoration: none;
+}
+
+.link {
+    margin-top: 0.5%;
+    background-color: #2a2a2a;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    font-size: 1em;
+    font-weight: 600;
+    transition: all .2s linear;
+    color: #f4f4f9;
+    border-bottom: 2px solid #2f2f2f;
+}
+
+.link i {
+    float: right;
+    font-size: 1.4em;
+}
+
+.is {
+    transform: scale(1.04);
+    background-color: #555;
+}
+
+.link:hover {
+    background-color: #f4f4f9;
+    color: #1b1b1b;
+}
+
+.btn-hide {
+    margin-top: 2%;
+}
+
+.btn-hide i {
+    margin-top: -6px;
+    margin-right: 2px;
+    font-size: 2.2em;
+    text-align: center;
+}
+
+i.hide-fix {
+    margin-top: 0;
+    font-size: 1.7em;
+}
+
+.btn-dark {
+    margin-top: 5%;
+    background-color: #222;
+    border-bottom: none;
+    float: right;
+}
+
+.btn-dark i {
+    font-size: 1.5em;
+    text-align: center;
+}
+
+.btn-dark:hover {
+    background-color: #2f2f2f;
+    box-shadow: 1px 2px 7px black;
+    color: white;
+}
+
+a:nth-child(4) .link i {
+    margin-right: 2.4px;
+}
+
+a:nth-child(6) .btn-hide {
+    background-color: #222;
+    border-bottom: none;
+}
+
+a:nth-child(6) .btn-hide:hover {
+    color: #f4f4f9;
+}
+
+/*Content*/
+.content{
+    transition: all .2s linear;
+    padding-left: 60px;
+    height: 100vh;
+}
+
+/*Banner*/
+.banner{
+    width: 100%;
+    height: 330px;
+    background: url(../img/banner.jpg) no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+/*Products*/
+.products{
+    margin-top: 3%;
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+.basic-product{
+    padding: 2%;
+    margin-bottom: 5%;
+    cursor: pointer;
+}
+
+.basic-product i{
+    transition: all .5s linear;
+    margin-right: 3%;
+    font-size: 1.8em;
+}
+
+.basic-product span{
+    font-size: 1.2em;
+}
+
+.basic-product:hover span{
+    padding-bottom: 2px;
+    border-bottom: 2px solid white;
+}
+
+.basic-product:hover i{
+    transform: scale(1.1);
+}
+
+/*Main (Articles)*/
+.main{
+    padding: 10px;
+}
+
+.service {
+    width: 100%;
+    text-align: left;
+    border-radius: 2px;
+    margin-bottom: 3%;
+}
+
+.service img {
+    width: 100%;
+    border-radius: 3px;
+}
+
+.inner {
+    padding: 3%;
+}
+
+.inner a {
+    font-size: 1.2em;
+    font-weight: 600;
+    color: white;
+    text-decoration: none;
+}
+
+.inner p {
+    margin-top: 2%;
+    font-size: 1em;
+    line-height: 1.5em;
+}
+
+.inner span {
+    transition: 0.3s;
+    text-transform: uppercase;
+    font-size: 0.9em;
+    color: #0067b8;
+    font-weight: 600;
+    border-bottom: 0px solid #0067b8;
+}
+
+.spans {
+    margin-top: 5%;
+    margin-bottom: 3%;
+}
+
+.spans i {
+    color: #0067b8;
+    font-weight: 600;
+    text-align: center;
+    width: 15px;
+}
+
+.spans span.sp-link:hover {
+    border-bottom-width: 2px;
+    margin-right: 1%;
+    padding-bottom: 1%;
+}
+
+
+/*Light Mode*/
+.dark-mode body {
+    background-color: white;
+    color: black;
+}
+
+.dark-mode body::-webkit-scrollbar-track {
+    background: white;
+}
+
+.dark-mode body::-webkit-scrollbar-thumb {
+    background: #c0c0c0;
+}
+
+.dark-mode a{
+        color: black;
+}
+
+.dark-mode .header{
+    background-color: #e9e9f3;
+}
+
+.dark-mode .bar {
+    background-color: #f0f0f3;
+    box-shadow: 1px 0px 5px rgba(0, 0, 0, 0.3);
+}
+
+.dark-mode .link {
+    background-color: #eaeaea;
+    border-bottom: 2px solid #cecece;
+}
+
+.dark-mode .is {
+    background-color: rgb(216, 214, 214);
+}
+
+.dark-mode .btn-dark, .dark-mode .link, .dark-mode .btn-menu {
+    color: #555;
+}
+
+.dark-mode .link:hover {
+    background-color: #1b1b1b;
+    color: #f4f4f9;
+}
+
+.dark-mode .btn-dark {
+    background-color: #f0f0f3;
+    border-bottom: none;
+}
+
+.dark-mode .btn-dark:hover {
+    background-color: #dddada;
+    box-shadow: 1px 2px 7px rgba(0, 0, 0, 0.507);
+    color: #2c2c2c;
+}
+
+.dark-mode a:nth-child(6) .btn-hide {
+    background-color: #f0f0f3;
+}
+
+.dark-mode a:nth-child(6) .btn-hide:hover {
+    color: #555;
+}
+
+.dark-mode .basic-product:hover span{
+    border-bottom-color: black;
+}
+
+.dark-mode .inner a {
+    color: black;
+}
+
+/*Medias*/
+
+@media screen and (max-width: 696px) {
+    .is {
+        transform: scale(1.02);
+    }
+}
+
+@media screen and (min-width: 638px) {
+    .service {
+        width: 49%;
+        float: left;
+        margin-right: 2%;
+        height: 410px;
+    }
+
+    .service:nth-child(2), .service:nth-child(4){
+        margin-right: 0;
+    }
+}
+
+@media screen and (min-width: 696px) {
+
+    .link:hover {
+        transition: 0.3s;
+        transform: scale(1.1);
+        margin-left: 5%;
+    }
+    
+    .btn-dark:hover {
+        transform: scale(1);
+        margin-left: 0;
+    }
+
+    .products{
+        text-align: center;
+    }
+
+    .basic-product{
+        display: inline-block;
+    }
+
+    .basic-product i{
+        font-size: 3em;
+        display: block;
+        margin: 0 auto;
+    }
+
+    .basic-product span{
+        width: 18%;
+        min-width: 150px;
+        margin: 0 auto;
+        display: block;
+        margin-top: 10%;
+        margin-bottom: 2%;
+    }
+
+    .banner{
+        height: 400px;
+    }
+
+}
+
+@media screen and (min-width: 1030px) {
+    .service {
+        width: 24%;
+        float: left;
+        margin-right: 1%;
+        margin-bottom: 0;
+    }
+    .service:nth-child(2){
+        margin-right: 1%;
+    }
+    .service:nth-child(4){
+        margin-right: 0;
+    }
+
+    .banner{
+        background-attachment: fixed;;
+        background-size: cover;
+    }
+
+}
