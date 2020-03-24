@@ -108,6 +108,7 @@ a{
 
 .btn-hide {
     margin-top: 2%;
+    cursor: pointer;
 }
 
 .btn-hide i {
